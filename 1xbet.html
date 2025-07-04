@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promos 1xBET - Codes promotionnels exclusifs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #14A0FF;
+            --secondary: #333;
+            --accent: #215281;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: var(--dark);
+            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /*max-width: 900px;
+            margin: 0 auto;
+            padding: 25px;
+            */color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--secondary), #000);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: white;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-image: url('./images/optimized-hero-image.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 60px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 94, 255, 0.3);
+        }
+        
+        /* Promo Codes Section */
+        .promo-section {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .promo-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .promo-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .promo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .promo-header {
+            background: linear-gradient(135deg, var(--secondary), var(--dark));
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .promo-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .promo-code {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .promo-body {
+            padding: 1.5rem;
+        }
+        
+        .promo-body ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .promo-body ul li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .promo-body ul li::before {
+            content: '✓';
+            color: var(--success);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .expiry {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 0;
+            background-color: #f9f9f9;
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .benefit-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .benefit-card h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+        
+        /* How to Use Section */
+        .how-to-use {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--secondary), #000);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .btn-light {
+            background: white;
+            color: var(--secondary);
+        }
+        
+        .btn-light:hover {
+            background: #eee;
+            color: var(--dark);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        /* Responsive adjustments for devices with max-width 768px */
+        @media (max-width: 1024px) {
+            .container {
+                width: 97%;
+                max-width: 100%;
+            }
+            .promo-cards, .benefit-grid, .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .steps {
+                max-width: 98vw;
+            }
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .hero {
+                height: auto;
+                min-height: 60vh;
+                padding: 40px 0 20px 0;
+            }
+            .hero-content {
+                padding-top: 3rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .section-title h2 {
+                font-size: 1.3rem;
+            }
+            .promo-cards, .benefit-grid, .footer-content {
+                grid-template-columns: 1fr;
+            }
+            .promo-section,
+            .benefits,
+            .how-to-use,
+            .cta {
+                padding: 2.2rem 0;
+            }
+            .bonus-card {
+                margin: 10px 0;
+                padding: 14px;
+            }
+            .steps {
+                gap: 1.2rem;
+            }
+            .step {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5rem;
+            }
+            /* Responsive Table */
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead {
+                display: none;
+            }
+            tr {
+                margin-bottom: 16px;
+                background: white;
+                border-radius: 9px;
+                box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+            }
+            td {
+                padding: 12px 10px 12px 10px;
+                position: relative;
+                text-align: left;
+                border: none;
+            }
+            td[data-label]:before {
+                content: attr(data-label) ": ";
+                font-weight: bold;
+                color: #1a5276;
+                display: inline-block;
+                min-width: 120px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 0 6px;
+            }
+            .hero h1, .cta h2 {
+                font-size: 1.3rem;
+            }
+            .section-title h2 {
+                font-size: 1.1rem;
+            }
+            .btn, .btn-light, .claim-btn {
+                width: 100%;
+                padding: 0.7rem 0;
+                font-size: 0.93rem;
+            }
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        th {
+            background-color: #1a5276;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #eaf2f8;
+        }
+        
+        .promo2-code {
+            font-weight: 700;
+            color: #e74c3c;
+            font-size: 16px;
+        }
+        
+        .highlight-box {
+            background-color: #eaf2f8;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #2980b9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-box strong {
+            color: #1a5276;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0));
+            margin: 40px 0;
+        }
+        
+        .country-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .currency {
+            font-weight: 700;
+            color: #27ae60;
+        }
+        .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #001e3c;
+}
+
+.logo {
+    height: 30px;
+}
+
+.language {
+    background-color: #0070f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 22px;
+}
+
+.bonus-card {
+    background: #012b55;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-small {
+    height: 25px;
+}
+
+.stars {
+    color: gold;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.code-container {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.copy-btn {
+    background: #4da6ff;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.claim-btn {
+    background: #ffc107;
+    color: black;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.verified, .details {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/*.footer2 {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #888;
+}
+
+  */  </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"><span>1X</span>BET</div>
+                <nav>
+                    <ul>
+                        <li><a href="#promo">Codes Promo</a></li>
+                        <li><a href="#benefits">Avantages</a></li>
+                        <li><a href="#how-to">Comment utiliser</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div id="mobile-nav" style="display:none; position:relative;">
+                <button onclick="toggleMenu()" aria-label="Fermer le menu" style="position:absolute;top:8px;right:12px;background:none;border:none;font-size:1.7rem;color:#1a5276;cursor:pointer;z-index:2;">
+                    &times;
+                </button>
+                <ul style="text-align:center; background:#fff; border-radius:8px; margin-top:10px; box-shadow:0 2px 10px rgba(0,0,0,0.12); padding:10px; list-style:none;">
+                    <li style="margin:12px 0;"><a href="#promo" style="color:#1a5276;">Codes Promo</a></li>
+                    <li style="margin:12px 0;"><a href="#benefits" style="color:#1a5276;">Avantages</a></li>
+                    <li style="margin:12px 0;"><a href="#how-to" style="color:#1a5276;">Comment utiliser</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+<!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Codes Promotionnels Exclusifs</h1>
+            <p>Obtenez des bonus supplémentaires, des free bets et des avantages exclusifs avec nos codes promo Melbet vérifiés.</p>
+            <a href="#promo" class="btn">Voir les codes</a>
+        </div>
+    </section>
+
+    <section class="bonus-card">
+        <div class="card-header">
+            <div class="logo"><span>1X</span>BET</div>
+            <div class="stars">★★★★★</div>
+        </div>
+        <h2>Bonus de bienvenue jusqu'à 2 000 $ + 150 tours gratuits</h2>
+        <div class="code-container">
+            <span class="promo-code">1XCACA</span>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText('1XCACA')">Copier</button>
+        </div>
+       
+        <p class="verified">Testé & Vérifié le 21 mars 2025</p>
+        <p class="details">
+            18+. Dépôt initial minimum de 25 $, dépôts suivants à partir de 50 $. Condition de mise x35 en 7 jours. 
+            Tours gratuits : 1er dépôt – Book of Gold, 2e dépôt – Legend of Cleopatra, 3e dépôt – Solar Queen, 
+            4e dépôt – Buffalo Power.
+        </p>
+
+    </section>
+
+
+    <!-- Promo Codes Section -->
+    <section class="promo-section" id="promo">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Nouveaux Codes Promo 1xbet</h2>
+                <p>Utilisez ces codes lors de votre inscription ou dépôt pour bénéficier d'avantages exclusifs</p>
+            </div>
+            
+            <div class="promo-cards">
+                <!-- Promo Card 1 -->
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <h3>Bonus de Bienvenue</h3>
+                        <div class="promo-code" id="promo-code-1"></div>
+                    </div>
+                    <div class="promo-body">
+                        <ul>
+                            <li>Free bet de 10€ offert</li>
+                            <li>Cashback de 5% sur les paris sportifs</li>
+                            <li>Valable pour les nouveaux comptes seulement</li>
+                        </ul>
+                        <div class="expiry">Expire le: 31/12/2027</div>
+                        <a href="https://cutt.ly/8rvXhbu4" target="_blank" class="btn">Utiliser ce code</a>
+                        <button class="copy-btn" onclick="navigator.clipboard.writeText('1xBET100')">Copier</button>
+                    </div>
+                </div>
+                
+                <!-- Promo Card 2 -->
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <h3>Bonus de Dépôt</h3>
+                        <div class="promo-code" id="promo-code-2"></div>
+                    </div>
+                    <div class="promo-body">
+                        <ul>
+                            <li>50% de bonus supplémentaire sur votre dépôt</li>
+                            <li>Maximum 200€ de bonus</li>
+                            <li>Utilisable sur les paris sportifs et casino</li>
+                            <li>Conditions de mise: x5</li>
+                        </ul>
+                        <div class="expiry">Expire le: 15/01/2027</div>
+                        <a href="https://cutt.ly/8rvXhbu4" target="_blank" class="btn">Utiliser ce code</a>
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText('1xBET50')">Copier</button>    
+                    </div>
+                </div>
+                
+                <!-- Promo Card 3 -->
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <h3>Free Bet</h3>
+                        <div class="promo-code" id="promo-code-3"></div>
+                    </div>
+                    <div class="promo-body">
+                        <ul>
+                            <li>Free bet de 25€ sans dépôt requis</li>
+                            <li>Pour les paris sportifs seulement</li>
+                            <li>Cote minimum: 1.50</li>
+                            <li>Valable 7 jours après activation</li>
+                        </ul>
+                        <div class="expiry">Expire le: 28/02/2027</div>
+                        <a href="https://cutt.ly/8rvXhbu4" target="_blank" class="btn">Utiliser ce code</a>
+                        <button class="copy-btn" onclick="navigator.clipboard.writeText('FREEBET237')">Copier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <center><h1>Codes Promo IxBet Dans Votre Pays</h1></center>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Pays et offre</th>
+                <th>Code promo</th>
+                <th>Bonus de bienvenue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="country-name" data-label="Pays et offre">Bonus 1xBET Inde</td>
+                <td class="promo2-code" data-label="Code promo">EXO</td>
+                <td data-label="Bonus de bienvenue"><span class="currency">100% jusqu'à 26 000 INR</span></td>
+            </tr>
+            <tr>
+                <td class="country-name" data-label="Pays et offre">Bonus 1xBET Bangladesh</td>
+                <td class="promo2-code" data-label="Code promo">EXO</td>
+                <td data-label="Bonus de bienvenue"><span class="currency">100% jusqu'à 13 000 BDT</span></td>
+            </tr>
+            <tr>
+                <td class="country-name" data-label="Pays et offre">Bonus 1xBET Singapour</td>
+                <td class="promo2-code" data-label="Code promo">EXO</td>
+                <td data-label="Bonus de bienvenue"><span class="currency">100% jusqu'à 210 SGD</span></td>
+            </tr>
+            <tr>
+                <td class="country-name" data-label="Pays et offre">Bonus 1xBET Malaisie</td>
+                <td class="promo2-code" data-label="Code promo">EXO</td>
+                <td data-label="Bonus de bienvenue"><span class="currency">100% jusqu'à 650 MYR</span></td>
+            </tr>
+            <tr>
+                <td class="country-name" data-label="Pays et offre">Bonus 1xBET Pakistan</td>
+                <td class="promo2-code" data-label="Code promo">EXO</td>
+                <td data-label="Bonus de bienvenue"><span class="currency">100% jusqu'à 15 000 PKR</span></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr>
+    
+    <div class="highlight-box">
+        <strong>1xBET</strong>
+        <p>Profitez de +100% sur votre premier dépôt avec nos code exclusif !</p>
+    </div>
+
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pourquoi utiliser nos codes promo ?</h2>
+                <p>Découvrez les avantages exclusifs que vous obtenez avec nos codes promotionnels Melbet</p>
+            </div>
+            
+            <div class="benefit-grid">
+                <!-- Benefit 1 -->
+
+            <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Bonus Supplémentaires</h3>
+                    <p>Obtenez des bonus supplémentaires sur vos dépôts, augmentant ainsi votre bankroll.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Free Bets</h3>
+                    <p>Recevez des paris gratuits sans risque pour tester vos stratégies.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cashback</h3>
+                    <p>Récupérez un pourcentage de vos pertes avec nos offres de cashback.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Avantages Exclusifs</h3>
+                    <p>Accédez à des promotions spéciales non disponibles publiquement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use" id="how-to">
+        <div class="container">
+            <div class="section-title">
+                <h2>Comment utiliser nos codes promo ?</h2>
+                <p>Suivez ces étapes simples pour activer vos bonus</p>
+            </div>
+            
+            <div class="steps">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Inscrivez-vous avec un de nos code promo</h3>
+                        <p>Créez un nouveau compte sur Melbet ou connectez-vous</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Effectuez un dépôt</h3>
+                        <p>Pour les bonus de dépôt, effectuez un dépôt du montant requis pour activer l'offre.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Profitez de votre bonus</h3>
+                        <p>Votre bonus sera crédité automatiquement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à profiter de ces avantages ?</h2>
+            <p>Utilisez nos codes promo 1xBET dès maintenant et boostez votre expérience de paris avec des bonus exclusifs.</p>
+            <a href="https://cutt.ly/8rvXhbu4" class="btn btn-light">aller a<span>1X</span>BET
+            </a>
+        </div>
+    </section>
+
+
+<!-- Footer -->
+<!-- Footer section with social media links -->
+    <!-- Footer Section -->
+    <!-- This section provides contact information, promotional details, and social media links for 1xbet -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1 -->
+                <!-- Contains promotional details and contact information -->
+                <div class="footer-column">
+                    <h3>1xbet Promo</h3>    
+                    <p>Rejoignez des millions de parieurs et profitez des meilleures cotes on vos événements sportifs préférés.</p>
+                    
+                    <h2>Support 24/7</h2>
+                    <div class="contact-info">
+                        <p>Besoin d'aide ? Contactez-nous !</p>
+                        <div><strong>Téléphone :</strong> +237 696213814 ||
+                        <strong>Email :</strong> support@1xBET.cm</div>
+                    </div>
+                    
+                    <p>Le meilleur site pour trouver des codes promotionnels 1xBET vérifiés et à jour.</p>
+                    <!-- Social media links -->
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    // Object containing promo codes for different offers
+    // Each key represents a specific promo offer, and the value is the corresponding promo code
+    const promoCodes = {
+        welcomeBonus: "1xBET100", // Promo code for the welcome bonus
+        depositBonus: "1xBET50",  // Promo code for the deposit bonus
+        freeBetBonus: "FREEBET237", // Promo code for the free bet bonus
+        }
+    const promoCode1Element = document.getElementById("promo-code-1");
+    if (promoCode1Element) {
+        promoCode1Element.textContent = promoCodes.welcomeBonus;
+    }
+
+    const promoCode2Element = document.getElementById("promo-code-2");
+    if (promoCode2Element) {
+        promoCode2Element.textContent = promoCodes.depositBonus;
+    }
+
+    const promoCode3Element = document.getElementById("promo-code-3");
+    if (promoCode3Element) {
+        promoCode3Element.textContent = promoCodes.freeBetBonus;
+    }
+    document.getElementById("promo-code-3").textContent = promoCodes.freeBetBonus;
+
+    function toggleMenu() {
+      var nav = document.getElementById("mobile-nav");
+      if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "block";
+      } else {
+        nav.style.display = "none";
+      }
+    }
+</script>
+</body>      
+</html>
